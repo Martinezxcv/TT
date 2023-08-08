@@ -11,7 +11,7 @@ public class DateFormatImpl {
         return LocalDate.of(year, month, day);
     }
 
-    public static int createRandomIntBetween(int start, int end) {
+    private static int createRandomIntBetween(int start, int end) {
         return start + (int) Math.round(Math.random() * (end - start));
     }
 }

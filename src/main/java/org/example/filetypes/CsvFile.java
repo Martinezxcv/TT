@@ -35,7 +35,7 @@ public class CsvFile extends FileData {
 
     }
 
-    public static <T> String convertToCsv(List<T> entitiesList, MappingStrategy<T> mappingStrategy) throws Exception {
+    private static <T> String convertToCsv(List<T> entitiesList, MappingStrategy<T> mappingStrategy) throws Exception {
         try (Writer writer = new StringWriter()) {
             StatefulBeanToCsv<T> beanToCsv = new StatefulBeanToCsvBuilder<T>(writer)
                     .withMappingStrategy(mappingStrategy)

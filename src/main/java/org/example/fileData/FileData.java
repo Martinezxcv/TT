@@ -22,23 +22,23 @@ public abstract class FileData implements FiletypeStrategy {
     public static class Dog implements Serializable {
         @DBField(name = "name")
         @CsvBindByName(column = "name")
-        String name;
+        private String name;
 
         @DBField(name = "age")
         @CsvBindByName(column = "age")
-        int age;
+        private int age;
 
         @DBField(name = "price")
         @CsvBindByName(column = "price")
-        float price;
+        private float price;
 
         @CsvBindByName(column = "id")
-        UUID uuid;
+        private UUID uuid;
 
         @DBField(name = "date")
         @CsvDate(value = "yyyy-MM-dd")
         @CsvBindByName(column = "date")
-        LocalDate date;
+        private LocalDate date;
     }
 
     @DBClass
@@ -48,19 +48,19 @@ public abstract class FileData implements FiletypeStrategy {
     public static class Car implements Serializable {
         @CsvBindByName(column = "model")
         @DBField(name = "model")
-        String model;
+        private String model;
 
         @CsvBindByName(column = "year")
         @DBField(name = "year")
-        int year;
+        private int year;
 
         @CsvBindByName(column = "price")
         @DBField(name = "price")
-        float price;
+        private float price;
 
         @CsvBindByName(column = "id")
         @DBField(name = "id")
-        UUID uuid;
+        private UUID uuid;
 
         @CsvBindByName(column = "extraFeatures")
         @DBField(name = "extraFeatures")

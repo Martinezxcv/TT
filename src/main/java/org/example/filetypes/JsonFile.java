@@ -46,7 +46,7 @@ public class JsonFile extends FileData {
         } else System.out.println("File does not exist");
     }
 
-    ExclusionStrategy strategy = new ExclusionStrategy() {
+    private final ExclusionStrategy strategy = new ExclusionStrategy() {
         @Override
         public boolean shouldSkipField(FieldAttributes field) {
             return field.getAnnotation(DBField.class)==null;

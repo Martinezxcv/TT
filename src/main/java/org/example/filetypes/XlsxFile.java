@@ -100,7 +100,7 @@ public class XlsxFile extends FileData {
         } else System.out.println("File does not exist");
     }
 
-    public Map<Integer, Object[]> getData(String type, List list) {
+    private Map<Integer, Object[]> getData(String type, List list) {
         Map<Integer, Object> data = new TreeMap<>();
         final int[] i = {0};
         list.forEach(obj -> {

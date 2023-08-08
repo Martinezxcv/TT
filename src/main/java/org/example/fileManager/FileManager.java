@@ -6,10 +6,11 @@ import org.example.filetypes.*;
 import org.example.interfaces.FiletypeStrategy;
 
 import java.util.List;
+import java.util.Objects;
 
 public class FileManager {
 
-    public FiletypeStrategy selectFiletype(int file) {
+    private FiletypeStrategy selectFiletype(int file) {
         switch (file) {
             case 1 -> {
                 return new CsvFile();
@@ -33,14 +34,14 @@ public class FileManager {
 
     public void selectOperation(int file, int operation, int data) throws Exception {
         if (operation == 1)
-            selectFiletype(file).saveToFile(selectData(data));
+            Objects.requireNonNull(selectFiletype(file)).saveToFile(selectData(data));
         else if (operation == 2)
-            selectFiletype(file).readFromFile(selectData(data));
+            Objects.requireNonNull(selectFiletype(file)).readFromFile(selectData(data));
         else
             System.out.println("Invalid operation type!");
 
     }
-    public List selectData(int data) {
+    private List selectData(int data) {
         switch (data) {
             case 1 -> {
                 return  new DogList().getDogList();
