@@ -1,13 +1,10 @@
 package org.example.filetypes;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.example.fileData.DBFieldModule;
-import org.example.fileData.DogList;
 import org.example.fileData.FileData;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.List;

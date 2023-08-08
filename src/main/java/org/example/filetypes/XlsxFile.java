@@ -1,13 +1,10 @@
 package org.example.filetypes;
 
-import com.opencsv.bean.CsvBindByName;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.example.annotations.DBField;
-import org.example.fileData.DogList;
 import org.example.fileData.FileData;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -68,7 +65,6 @@ public class XlsxFile extends FileData {
         }
         System.out.println("Succesfully saved file to xlsx");
     }
-
 
     @Override
     public void readFromFile(List list) throws IOException {

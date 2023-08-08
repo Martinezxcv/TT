@@ -9,12 +9,10 @@ import com.google.gson.stream.JsonReader;
 import org.example.annotations.DBField;
 import org.example.fileData.FileData;
 import org.example.fileData.LocalDateTypeAdapter;
-
 import java.io.*;
 import java.lang.reflect.Type;
 import java.time.LocalDate;
 import java.util.List;
-
 
 public class JsonFile extends FileData {
 

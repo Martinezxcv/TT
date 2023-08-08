@@ -30,7 +30,6 @@ public class DBFieldModule extends SimpleModule {
             for (BeanPropertyWriter writer : beanProperties) {
                 AnnotatedMember propertyMember = writer.getMember();
                 if (propertyMember != null && propertyMember.hasAnnotation(DBField.class)) {
-                    // Include only the properties with @DBField annotation
                     filteredProperties.add(writer);
                 }
             }

@@ -3,10 +3,8 @@ package org.example.filetypes;
 import com.opencsv.CSVWriter;
 import com.opencsv.bean.*;
 import org.example.fileData.FileData;
-
 import java.io.*;
 import java.util.List;
-
 
 public class CsvFile extends FileData {
     @Override
