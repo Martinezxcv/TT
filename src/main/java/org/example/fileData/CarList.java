@@ -7,6 +7,7 @@ import java.util.UUID;
 
 @Data
 public class CarList {
+
     DateFormatImpl dateFormat = new DateFormatImpl();
     List<FileData.Car> carList = List.of(
             new FileData.Car("Toyota", 1998, 19754.7f, UUID.randomUUID(), false),

@@ -27,7 +27,6 @@ public class JsonFile extends FileData {
         writer.write(gson.toJson(list));
         writer.close();
         System.out.println("Succesfully saved file to json");
-
     }
 
     @Override

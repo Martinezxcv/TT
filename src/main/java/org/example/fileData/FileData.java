@@ -15,11 +15,13 @@ import java.util.UUID;
 
 @AllArgsConstructor
 public abstract class FileData implements FiletypeStrategy {
+
     @Data
     @DBClass
     @NoArgsConstructor
     @AllArgsConstructor
     public static class Dog implements Serializable {
+
         @DBField(name = "name")
         @CsvBindByName(column = "name")
         private String name;
@@ -46,6 +48,7 @@ public abstract class FileData implements FiletypeStrategy {
     @AllArgsConstructor
     @Data
     public static class Car implements Serializable {
+
         @CsvBindByName(column = "model")
         @DBField(name = "model")
         private String model;
@@ -65,6 +68,5 @@ public abstract class FileData implements FiletypeStrategy {
         @CsvBindByName(column = "extraFeatures")
         @DBField(name = "extraFeatures")
         private boolean extraFeatures;
-
     }
 }

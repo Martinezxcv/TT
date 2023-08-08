@@ -7,6 +7,7 @@ import java.io.*;
 import java.util.List;
 
 public class CsvFile extends FileData {
+
     @Override
     public void saveToFile(List list) throws Exception {
         Writer writer = new FileWriter("C:\\Users\\mmazurek\\Desktop\\pliki\\"+list.get(0).getClass().getSimpleName()+".csv");
@@ -32,7 +33,6 @@ public class CsvFile extends FileData {
                     .parse();
             System.out.println(beans);
         } else System.out.println("File does not exist");
-
     }
 
     private static <T> String convertToCsv(List<T> entitiesList, MappingStrategy<T> mappingStrategy) throws Exception {

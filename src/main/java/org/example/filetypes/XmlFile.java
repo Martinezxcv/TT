@@ -27,7 +27,6 @@ public class XmlFile extends FileData {
 
     @Override
     public void readFromFile(List list) throws IOException {
-
         File file = new File("C:\\Users\\mmazurek\\Desktop\\pliki\\"+list.get(0).getClass().getSimpleName()+".xml");
         if (file.exists()) {
             SimpleModule module = new SimpleModule();

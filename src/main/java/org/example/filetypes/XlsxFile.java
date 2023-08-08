@@ -55,7 +55,6 @@ public class XlsxFile extends FileData {
                     cell.setCellValue((Boolean) obj) ;
             }
         }
-
         try {
             FileOutputStream outputStream = new FileOutputStream("C:\\Users\\mmazurek\\Desktop\\pliki\\"+list.get(0).getClass().getSimpleName()+".xlsx");
             workbook.write(outputStream);

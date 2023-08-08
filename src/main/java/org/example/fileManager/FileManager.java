@@ -39,8 +39,8 @@ public class FileManager {
             Objects.requireNonNull(selectFiletype(file)).readFromFile(selectData(data));
         else
             System.out.println("Invalid operation type!");
-
     }
+
     private List selectData(int data) {
         switch (data) {
             case 1 -> {
