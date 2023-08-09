@@ -1,0 +1,12 @@
+package org.example.interfaces;
+
+import java.io.IOException;
+import java.util.List;
+
+public interface FiletypeStrategy {
+ void saveToFile(List list, String path) throws Exception;
+ void readFromFile(List list, String path) throws IOException;
+
+ String getFileExtension();
+
+}
