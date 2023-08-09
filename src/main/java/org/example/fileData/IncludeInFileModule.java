@@ -7,12 +7,11 @@ import com.fasterxml.jackson.databind.introspect.AnnotatedMember;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.databind.ser.BeanPropertyWriter;
 import com.fasterxml.jackson.databind.ser.BeanSerializerModifier;
-import org.example.annotations.DBField;
-
+import org.example.annotations.IncludeInFile;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DBFieldModule extends SimpleModule {
+public class IncludeInFileModule extends SimpleModule {
 
     @Override
     public void setupModule(Module.SetupContext context) {
@@ -29,7 +28,7 @@ public class DBFieldModule extends SimpleModule {
 
             for (BeanPropertyWriter writer : beanProperties) {
                 AnnotatedMember propertyMember = writer.getMember();
-                if (propertyMember != null && propertyMember.hasAnnotation(DBField.class)) {
+                if (propertyMember != null && propertyMember.hasAnnotation(IncludeInFile.class)) {
                     filteredProperties.add(writer);
                 }
             }
