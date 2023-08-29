@@ -1,0 +1,6 @@
+jak biore tylko określone pola i zapisuje do pliku to przy odczycie @ToString z lomboka i tak bierze wszystkie pola.
+Miałem pomysł aby generować dla klas klasyDTO które mialyby tylko pola z adnotacjami, ale nie potrafie skorzystać z annotation processing.
+Pokazuje błąd, że nie istnieje procesor
+
+Edit:
+Problem jest tylko przy csv i yaml. Jak odczytuje obiekty to wartości które nie są w pliku są nullami. Może jest na to jakiś inny sposób. 
