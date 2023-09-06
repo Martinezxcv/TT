@@ -1,0 +1,192 @@
+2023-09-06 08:20:12,983 INFO o.s.b.StartupInfoLogger [main] Starting ShopSpringApplicationTests using Java 17.0.7 with PID 88 (started by mmazurek in C:\Users\mmazurek\Downloads\shopSpring\shopSpring)
+2023-09-06 08:20:12,992 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.1.3, Spring v6.0.11
+2023-09-06 08:20:12,994 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-09-06 08:20:13,855 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-06 08:20:13,969 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 102 ms. Found 8 JPA repository interfaces.
+2023-09-06 08:20:14,481 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-09-06 08:20:14,863 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a785fd5
+2023-09-06 08:20:14,865 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-09-06 08:20:15,269 INFO l.l.c.JavaLogger [main] Reading resource: yaml/01_Address.yaml
+2023-09-06 08:20:15,522 INFO l.l.c.JavaLogger [main] Reading resource: yaml/02_Cart.yaml
+2023-09-06 08:20:15,537 INFO l.l.c.JavaLogger [main] Reading resource: yaml/03_Login.yaml
+2023-09-06 08:20:15,553 INFO l.l.c.JavaLogger [main] Reading resource: yaml/04_Roles.yaml
+2023-09-06 08:20:15,570 INFO l.l.c.JavaLogger [main] Reading resource: yaml/05_Client.yaml
+2023-09-06 08:20:15,591 INFO l.l.c.JavaLogger [main] Reading resource: yaml/06_Orders.yaml
+2023-09-06 08:20:15,610 INFO l.l.c.JavaLogger [main] Reading resource: yaml/07_Product.yaml
+2023-09-06 08:20:15,632 INFO l.l.c.JavaLogger [main] Reading resource: yaml/08_Employee.yaml
+2023-09-06 08:20:15,648 INFO l.l.c.JavaLogger [main] Reading resource: yaml/09_Product_History.yaml
+2023-09-06 08:20:15,662 INFO l.l.c.JavaLogger [main] Reading resource: yaml/10_Alter.yaml
+2023-09-06 08:20:15,850 INFO l.l.c.JavaLogger [main] Reading from shopYaml.DATABASECHANGELOG
+2023-09-06 08:20:15,926 INFO l.l.c.JavaLogger [main] Reading from shopYaml.DATABASECHANGELOG
+2023-09-06 08:20:15,937 INFO l.l.c.JavaLogger [main] UPDATE SUMMARY
+2023-09-06 08:20:15,938 INFO l.l.c.JavaLogger [main] Run:                          0
+2023-09-06 08:20:15,938 INFO l.l.c.JavaLogger [main] Previously run:              10
+2023-09-06 08:20:15,938 INFO l.l.c.JavaLogger [main] Filtered out:                 0
+2023-09-06 08:20:15,939 INFO l.l.c.JavaLogger [main] -------------------------------
+2023-09-06 08:20:15,939 INFO l.l.c.JavaLogger [main] Total change sets:           10
+
+2023-09-06 08:20:15,940 INFO l.l.c.JavaLogger [main] Update summary generated
+2023-09-06 08:20:15,963 INFO l.l.c.JavaLogger [main] Successfully released change log lock
+2023-09-06 08:20:15,965 INFO l.l.c.JavaLogger [main] Command execution complete
+2023-09-06 08:20:16,069 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-06 08:20:16,170 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-06 08:20:16,174 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-09-06 08:20:16,355 INFO o.h.e.b.i.EnversServiceImpl [main] Envers integration enabled? : true
+2023-09-06 08:20:16,388 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-09-06 08:20:16,550 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-06 08:20:16,924 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.orders.model.Orders
+2023-09-06 08:20:16,927 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.entities.Product_Order
+2023-09-06 08:20:16,927 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.entities.Product_History
+2023-09-06 08:20:16,928 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.entities.Product_Cart
+2023-09-06 08:20:16,929 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.employees.model.Employee
+2023-09-06 08:20:16,929 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.roles.model.Roles
+2023-09-06 08:20:16,930 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.products.model.Product
+2023-09-06 08:20:16,932 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.carts.model.Cart
+2023-09-06 08:20:16,932 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.logins.model.Login
+2023-09-06 08:20:17,028 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-09-06 08:20:17,098 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): com.example.shopSpring.data.entities.Product_Cart
+2023-09-06 08:20:17,098 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): com.example.shopSpring.data.entities.Product_Cart
+2023-09-06 08:20:17,099 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): com.example.shopSpring.data.entities.ProductOrderId
+2023-09-06 08:20:17,099 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): com.example.shopSpring.data.entities.ProductOrderId
+2023-09-06 08:20:17,908 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-06 08:20:17,956 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-06 08:20:18,576 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-06 08:20:19,027 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for ExactUrl [processUrl='/login?error']
+2023-09-06 08:20:19,045 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for ExactUrl [processUrl='/login']
+2023-09-06 08:20:19,046 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for ExactUrl [processUrl='/login']
+2023-09-06 08:20:19,046 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [hasAnyRole('ROLE_admin','ROLE_user','ROLE_Employee')] for Ant [pattern='/**', GET]
+2023-09-06 08:20:19,048 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [hasAnyRole('ROLE_admin','ROLE_Employee')] for Ant [pattern='/role/**']
+2023-09-06 08:20:19,048 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for any request
+2023-09-06 08:20:19,062 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2d7c93e0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11088420, org.springframework.security.web.context.SecurityContextHolderFilter@698cc99d, org.springframework.security.web.header.HeaderWriterFilter@4f8d7222, org.springframework.security.web.authentication.logout.LogoutFilter@732af580, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@428c9250, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@54856056, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7eba3b90, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@389ae8f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f9769ae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@776a3e76, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54d0724f, org.springframework.security.web.access.ExceptionTranslationFilter@73b77d07, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d931617]
+2023-09-06 08:20:19,653 INFO o.s.b.StartupInfoLogger [main] Started ShopSpringApplicationTests in 7.055 seconds (process running for 8.368)
+2023-09-06 08:20:20,228 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-06 08:20:20,230 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-09-06 08:20:20,241 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-09-06 09:36:45,208 INFO o.s.b.StartupInfoLogger [main] Starting ShopSpringApplicationTests using Java 17.0.7 with PID 8128 (started by mmazurek in C:\Users\mmazurek\Downloads\shopSpring\shopSpring)
+2023-09-06 09:36:45,216 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.1.3, Spring v6.0.11
+2023-09-06 09:36:45,217 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-09-06 09:36:46,070 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-06 09:36:46,171 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 92 ms. Found 8 JPA repository interfaces.
+2023-09-06 09:36:46,704 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-09-06 09:36:47,086 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d43a1b7
+2023-09-06 09:36:47,088 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-09-06 09:36:47,480 INFO l.l.c.JavaLogger [main] Reading resource: yaml/01_Address.yaml
+2023-09-06 09:36:47,737 INFO l.l.c.JavaLogger [main] Reading resource: yaml/02_Cart.yaml
+2023-09-06 09:36:47,752 INFO l.l.c.JavaLogger [main] Reading resource: yaml/03_Login.yaml
+2023-09-06 09:36:47,765 INFO l.l.c.JavaLogger [main] Reading resource: yaml/04_Roles.yaml
+2023-09-06 09:36:47,778 INFO l.l.c.JavaLogger [main] Reading resource: yaml/05_Client.yaml
+2023-09-06 09:36:47,792 INFO l.l.c.JavaLogger [main] Reading resource: yaml/06_Orders.yaml
+2023-09-06 09:36:47,803 INFO l.l.c.JavaLogger [main] Reading resource: yaml/07_Product.yaml
+2023-09-06 09:36:47,831 INFO l.l.c.JavaLogger [main] Reading resource: yaml/08_Employee.yaml
+2023-09-06 09:36:47,855 INFO l.l.c.JavaLogger [main] Reading resource: yaml/09_Product_History.yaml
+2023-09-06 09:36:47,866 INFO l.l.c.JavaLogger [main] Reading resource: yaml/10_Alter.yaml
+2023-09-06 09:36:48,075 INFO l.l.c.JavaLogger [main] Reading from shopYaml.DATABASECHANGELOG
+2023-09-06 09:36:48,211 INFO l.l.c.JavaLogger [main] Reading from shopYaml.DATABASECHANGELOG
+2023-09-06 09:36:48,223 INFO l.l.c.JavaLogger [main] UPDATE SUMMARY
+2023-09-06 09:36:48,224 INFO l.l.c.JavaLogger [main] Run:                          0
+2023-09-06 09:36:48,226 INFO l.l.c.JavaLogger [main] Previously run:              10
+2023-09-06 09:36:48,226 INFO l.l.c.JavaLogger [main] Filtered out:                 0
+2023-09-06 09:36:48,227 INFO l.l.c.JavaLogger [main] -------------------------------
+2023-09-06 09:36:48,227 INFO l.l.c.JavaLogger [main] Total change sets:           10
+
+2023-09-06 09:36:48,229 INFO l.l.c.JavaLogger [main] Update summary generated
+2023-09-06 09:36:48,253 INFO l.l.c.JavaLogger [main] Successfully released change log lock
+2023-09-06 09:36:48,255 INFO l.l.c.JavaLogger [main] Command execution complete
+2023-09-06 09:36:48,377 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-06 09:36:48,486 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-06 09:36:48,489 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-09-06 09:36:48,666 INFO o.h.e.b.i.EnversServiceImpl [main] Envers integration enabled? : true
+2023-09-06 09:36:48,696 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-09-06 09:36:48,846 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-06 09:36:49,202 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.orders.model.Orders
+2023-09-06 09:36:49,205 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.entities.Product_Order
+2023-09-06 09:36:49,205 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.entities.Product_History
+2023-09-06 09:36:49,207 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.entities.Product_Cart
+2023-09-06 09:36:49,207 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.employees.model.Employee
+2023-09-06 09:36:49,207 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.roles.model.Roles
+2023-09-06 09:36:49,208 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.products.model.Product
+2023-09-06 09:36:49,209 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.carts.model.Cart
+2023-09-06 09:36:49,210 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.logins.model.Login
+2023-09-06 09:36:49,303 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-09-06 09:36:49,375 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): com.example.shopSpring.data.entities.Product_Cart
+2023-09-06 09:36:49,375 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): com.example.shopSpring.data.entities.Product_Cart
+2023-09-06 09:36:49,376 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): com.example.shopSpring.data.entities.ProductOrderId
+2023-09-06 09:36:49,376 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): com.example.shopSpring.data.entities.ProductOrderId
+2023-09-06 09:36:50,155 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-06 09:36:50,204 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-06 09:36:50,892 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-06 09:36:51,303 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for ExactUrl [processUrl='/login?error']
+2023-09-06 09:36:51,321 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for ExactUrl [processUrl='/login']
+2023-09-06 09:36:51,321 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for ExactUrl [processUrl='/login']
+2023-09-06 09:36:51,321 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [hasAnyRole('ROLE_admin','ROLE_user','ROLE_Employee')] for Ant [pattern='/**', GET]
+2023-09-06 09:36:51,324 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [hasAnyRole('ROLE_admin','ROLE_Employee')] for Ant [pattern='/role/**']
+2023-09-06 09:36:51,325 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for any request
+2023-09-06 09:36:51,339 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1dfa18a6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4886b6bd, org.springframework.security.web.context.SecurityContextHolderFilter@78a5c127, org.springframework.security.web.header.HeaderWriterFilter@4d34baec, org.springframework.security.web.authentication.logout.LogoutFilter@72c743f4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7b8b458e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1276caf2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@674f6286, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7eba3b90, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24c036b7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ff35d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@305a362a, org.springframework.security.web.access.ExceptionTranslationFilter@32e14e55, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46fbb0a3]
+2023-09-06 09:36:51,945 INFO o.s.b.StartupInfoLogger [main] Started ShopSpringApplicationTests in 7.095 seconds (process running for 8.564)
+2023-09-06 09:36:52,593 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-06 09:36:52,597 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-09-06 09:36:52,616 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-09-06 11:15:05,454 INFO o.s.b.StartupInfoLogger [main] Starting ShopSpringApplicationTests using Java 17.0.7 with PID 8508 (started by mmazurek in C:\Users\mmazurek\Downloads\shopSpring\shopSpring)
+2023-09-06 11:15:05,467 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.1.3, Spring v6.0.11
+2023-09-06 11:15:05,468 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-09-06 11:15:06,357 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-06 11:15:06,470 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 103 ms. Found 8 JPA repository interfaces.
+2023-09-06 11:15:07,020 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-09-06 11:15:07,404 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@790ac3e0
+2023-09-06 11:15:07,406 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-09-06 11:15:07,818 INFO l.l.c.JavaLogger [main] Reading resource: yaml/01_Address.yaml
+2023-09-06 11:15:08,093 INFO l.l.c.JavaLogger [main] Reading resource: yaml/02_Cart.yaml
+2023-09-06 11:15:08,109 INFO l.l.c.JavaLogger [main] Reading resource: yaml/03_Login.yaml
+2023-09-06 11:15:08,125 INFO l.l.c.JavaLogger [main] Reading resource: yaml/04_Roles.yaml
+2023-09-06 11:15:08,138 INFO l.l.c.JavaLogger [main] Reading resource: yaml/05_Client.yaml
+2023-09-06 11:15:08,152 INFO l.l.c.JavaLogger [main] Reading resource: yaml/06_Orders.yaml
+2023-09-06 11:15:08,162 INFO l.l.c.JavaLogger [main] Reading resource: yaml/07_Product.yaml
+2023-09-06 11:15:08,185 INFO l.l.c.JavaLogger [main] Reading resource: yaml/08_Employee.yaml
+2023-09-06 11:15:08,202 INFO l.l.c.JavaLogger [main] Reading resource: yaml/09_Product_History.yaml
+2023-09-06 11:15:08,216 INFO l.l.c.JavaLogger [main] Reading resource: yaml/10_Alter.yaml
+2023-09-06 11:15:08,421 INFO l.l.c.JavaLogger [main] Reading from shopYaml.DATABASECHANGELOG
+2023-09-06 11:15:08,502 INFO l.l.c.JavaLogger [main] Reading from shopYaml.DATABASECHANGELOG
+2023-09-06 11:15:08,514 INFO l.l.c.JavaLogger [main] UPDATE SUMMARY
+2023-09-06 11:15:08,515 INFO l.l.c.JavaLogger [main] Run:                          0
+2023-09-06 11:15:08,515 INFO l.l.c.JavaLogger [main] Previously run:              10
+2023-09-06 11:15:08,516 INFO l.l.c.JavaLogger [main] Filtered out:                 0
+2023-09-06 11:15:08,516 INFO l.l.c.JavaLogger [main] -------------------------------
+2023-09-06 11:15:08,517 INFO l.l.c.JavaLogger [main] Total change sets:           10
+
+2023-09-06 11:15:08,518 INFO l.l.c.JavaLogger [main] Update summary generated
+2023-09-06 11:15:08,555 INFO l.l.c.JavaLogger [main] Successfully released change log lock
+2023-09-06 11:15:08,556 INFO l.l.c.JavaLogger [main] Command execution complete
+2023-09-06 11:15:08,670 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-06 11:15:08,758 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-06 11:15:08,760 INFO o.h.c.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-09-06 11:15:08,924 INFO o.h.e.b.i.EnversServiceImpl [main] Envers integration enabled? : true
+2023-09-06 11:15:08,953 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-09-06 11:15:09,117 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-06 11:15:09,462 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.orders.model.Orders
+2023-09-06 11:15:09,465 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.entities.Product_Order
+2023-09-06 11:15:09,466 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.entities.Product_History
+2023-09-06 11:15:09,467 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.entities.Product_Cart
+2023-09-06 11:15:09,468 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.employees.model.Employee
+2023-09-06 11:15:09,468 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.roles.model.Roles
+2023-09-06 11:15:09,468 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.products.model.Product
+2023-09-06 11:15:09,470 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.carts.model.Cart
+2023-09-06 11:15:09,470 INFO o.h.e.c.i.m.AuditMetadataGenerator [main] Adding properties for entity: com.example.shopSpring.data.logins.model.Login
+2023-09-06 11:15:09,559 INFO o.h.b.i.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-09-06 11:15:09,639 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): com.example.shopSpring.data.entities.Product_Cart
+2023-09-06 11:15:09,639 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): com.example.shopSpring.data.entities.Product_Cart
+2023-09-06 11:15:09,640 WARN o.h.m.RootClass [main] HHH000038: Composite-id class does not override equals(): com.example.shopSpring.data.entities.ProductOrderId
+2023-09-06 11:15:09,640 WARN o.h.m.RootClass [main] HHH000039: Composite-id class does not override hashCode(): com.example.shopSpring.data.entities.ProductOrderId
+2023-09-06 11:15:10,438 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-06 11:15:10,491 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-06 11:15:11,165 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-06 11:15:11,602 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for ExactUrl [processUrl='/login?error']
+2023-09-06 11:15:11,624 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for ExactUrl [processUrl='/login']
+2023-09-06 11:15:11,624 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for ExactUrl [processUrl='/login']
+2023-09-06 11:15:11,625 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [hasAnyRole('ROLE_admin','ROLE_user','ROLE_Employee')] for Ant [pattern='/**', GET]
+2023-09-06 11:15:11,627 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [hasAnyRole('ROLE_admin','ROLE_Employee')] for Ant [pattern='/role/**']
+2023-09-06 11:15:11,627 DEBUG o.s.s.w.a.e.ExpressionBasedFilterInvocationSecurityMetadataSource [main] Adding web access control expression [permitAll] for any request
+2023-09-06 11:15:11,650 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10aa4210, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a3ece9d, org.springframework.security.web.context.SecurityContextHolderFilter@38dd5c3a, org.springframework.security.web.header.HeaderWriterFilter@68d07b48, org.springframework.security.web.authentication.logout.LogoutFilter@12223f2b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@116cad39, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@d5f3118, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@675d209c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@53c7c937, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3eb60858, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@469f8de2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@aebd00f, org.springframework.security.web.access.ExceptionTranslationFilter@2df92850, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24c28909]
+2023-09-06 11:15:12,252 INFO o.s.b.StartupInfoLogger [main] Started ShopSpringApplicationTests in 7.168 seconds (process running for 8.403)
+2023-09-06 11:15:12,886 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-06 11:15:12,889 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-09-06 11:15:12,904 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

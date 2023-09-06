@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: marcin
+      changes:
+        - createTable:
+            tableName: Orders
+            columns:
+              - column:
+                  name: Id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: OrderDate
+                  type: DATE

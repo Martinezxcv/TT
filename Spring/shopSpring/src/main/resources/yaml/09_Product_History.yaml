@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: marcin
+      changes:
+        - createTable:
+            tableName: Product_History
+            columns:
+              - column:
+                  name: Id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: Product_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_product_prodhis
+                    references: Product(id)
+              - column:
+                  name: Employee_id
+                  type: INT
+              - column:
+                  name: OldPrice
+                  type: FLOAT
+              - column:
+                  name: NewPrice
+                  type: FLOAT
+              - column:
+                  name: ChangeDate
+                  type: DATE
+

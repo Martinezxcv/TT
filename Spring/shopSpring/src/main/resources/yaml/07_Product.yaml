@@ -1,0 +1,77 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: marcin
+      changes:
+        - createTable:
+            tableName: Product
+            columns:
+              - column:
+                  name: Id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: Name
+                  type: VARCHAR(255)
+              - column:
+                  name: Price
+                  type: FLOAT
+              - column:
+                  name: Available
+                  type: INT
+              - column:
+                  name: Quantity
+                  type: INT
+              - column:
+                  name: Description
+                  type: VARCHAR(255)
+        - createTable:
+            tableName: Product_Cart
+            columns:
+              - column:
+                  name: Product_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_Product_Cart_Product
+                    references: Product(id)
+              - column:
+                  name: Cart_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_Product_Cart_Cart
+                    references: Cart(id)
+            primaryKey:
+              name: PK_Product_Cart
+              columnNames: Product_id, Cart_id
+
+        - createTable:
+            tableName: Product_Order
+            columns:
+              - column:
+                  name: Product_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_product_order
+                    references: Product(id)
+              - column:
+                  name: Order_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_product_orderid
+                    references: Orders(id)
+              - column:
+                  name: Price
+                  type: FLOAT
+              - column:
+                  name: Quantity
+                  type: INT
+            primaryKey:
+              name: PK_Product_Order
+              columnNames: Product_id, Order_id
+
