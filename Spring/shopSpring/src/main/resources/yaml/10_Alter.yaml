@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: marcin
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: Employee
+            baseColumnNames: ProductHistory_id
+            referencedTableName: Product_History
+            referencedColumnNames: Id
+            constraintName: fk_ProductHistory_id_employee
+        - addForeignKeyConstraint:
+            baseTableName: Product_History
+            baseColumnNames: Employee_id
+            referencedTableName: Employee
+            referencedColumnNames: Id
+            constraintName: fk_ProductHistory_id_employeeggggh

@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: marcin
+      changes:
+        - createTable:
+            tableName: Employee
+            columns:
+              - column:
+                  name: Id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: Login_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_Login_employee
+                    references: Login(id)
+              - column:
+                  name: Role_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_role_employee
+                    references: Roles(id)
+              - column:
+                  name: ProductHistory_id
+                  type: INT
+              - column:
+                  name: Firstname
+                  type: VARCHAR(255)
+              - column:
+                  name: Lastname
+                  type: VARCHAR(255)
+              - column:
+                  name: Phone
+                  type: VARCHAR(20)
+              - column:
+                  name: Email
+                  type: VARCHAR(255)
+

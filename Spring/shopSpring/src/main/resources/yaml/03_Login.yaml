@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: marcin
+      changes:
+        - createTable:
+            tableName: Login
+            columns:
+              - column:
+                  name: Id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: Login
+                  type: VARCHAR(255)
+              - column:
+                  name: Password
+                  type: VARCHAR(255)

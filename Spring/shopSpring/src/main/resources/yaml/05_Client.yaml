@@ -1,0 +1,47 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: marcin
+      changes:
+        - createTable:
+            tableName: Client
+            columns:
+              - column:
+                  name: Id
+                  type: INT
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: Login_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_login_client
+                    references: Login(id)
+              - column:
+                  name: Address_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_address_client
+                    references: Address(id)
+              - column:
+                  name: Cart_id
+                  type: INT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_cart_client
+                    references: Cart(id)
+              - column:
+                  name: Firstname
+                  type: VARCHAR(255)
+              - column:
+                  name: Lastname
+                  type: VARCHAR(255)
+              - column:
+                  name: Phone
+                  type: VARCHAR(20)
+              - column:
+                  name: Email
+                  type: VARCHAR(255)
+

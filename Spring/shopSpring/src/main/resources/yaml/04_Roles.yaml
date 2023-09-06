@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: marcin
+      changes:
+        - createTable:
+            tableName: Roles
+            columns:
+              - column:
+                  name: Id
+                  type: INT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: Role
+                  type: VARCHAR(255)
